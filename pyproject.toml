@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "jax-streams"
+version = "0.1.0"
+description = ""
+authors = ["Cristian Garcia <cgarcia.e88@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "jax_streams"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+tensorflow-cpu = {version = ">=2.5.0", python = ">=3.8,<3.11"}
+tensorflow-datasets = ">=4.2.0"
+jax = ">=0.3.25"
+jaxlib = ">=0.3.25"
+flax = "^0.6.3"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.19.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
